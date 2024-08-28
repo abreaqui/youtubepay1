@@ -1,0 +1,280 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos do Card Principal */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 0px;
+    text-align: center;
+    width: 360px; /* Ajuste a largura conforme necessário */
+    position: relative; /* Permite o posicionamento absoluto do card vermelho dentro do card principal */
+}
+
+/* Imagem do Card Principal */
+.card-img {
+    width: 100px;
+    height: auto;
+    margin-top: px;
+    margin-bottom: 20px;
+    transform: translateX(-100px);
+}
+
+/* Estilos do Card Vermelho dentro do Card Principal */
+.card-red {
+    background: #ff0000;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    font-weight: bolder;
+    text-align: center;
+    width: 100px; /* Ajuste a largura conforme necessário */
+    position: absolute; /* Posiciona o card vermelho dentro do card principal */
+    right: 15px; /* Ajusta o posicionamento à direita */
+    bottom: 15px; /* Ajusta o posicionamento na parte inferior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos do Card de Avaliação */
+.feedback-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Ajuste a largura conforme necessário */
+    margin-top: 100px;height: 740px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro do card */
+}
+.feedback-card h1{
+  font-size: 20px;
+  margin-top: -10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  color: rgb(24, 166, 24);
+}
+
+/* Imagem de Feedback */
+.feedback-img {
+    width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 100px;
+    margin-bottom: 15px;
+}
+
+/* Estilos das Perguntas e Estrelas */
+.question {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.question p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilos dos Botões de Opção */
+.question label {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .boxes input[type="radio"] {
+    display: none;
+  }
+  
+  .boxes label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0px;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  
+  .boxes input[type="radio"]:checked + label {
+    background-color: #ff0000;
+    color: #fff;
+    border-color: #ffffff;
+  }
+  
+  .boxes input[type="radio"]:checked + label::before {
+    content: "\2713"; /* Sinal de checked */
+    font-size: 18px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  .question label {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .question input[type="radio"] {
+    display: none;
+  }
+  
+  .question label span {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #333;
+    text-align: center;
+    padding-top: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  .question input[type="radio"]:checked + span {
+    background-color: #ff0000; /* Cor vermelha */
+    color: #fff;
+    border-color: #ff0000;
+  }
+  
+  .question label span:hover {
+    background-color: #ccc; /* Cor de hover */
+  }
+  .submit-btn {
+    background-color: #ccc; /* Cor cinza */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+  }
+  
+  .submit-btn:enabled {
+    background-color: #ff0000; /* Cor vermelha */
+    color: #fff;
+    border: 1px solid #ffffff; /* Borda preta */
+    width: 350px;
+  }
+  /* Adicione este código CSS ao seu arquivo */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    width: 200px;
+  }
+  
+  .popup-content {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .moeda-symbol {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #ganho-value {
+    font-weight: bold;
+  }
+  .popup-content i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: green;
+  }
+  .feedback-card {
+    /* Seus estilos para o card */
+    margin-bottom: 20px;
+}
+.fixed-card {
+  position: fixed;
+  bottom: px; /* Ajuste a distância do card em relação à parte inferior da tela */
+  right: 0px;  /* Ajuste a distância do card em relação à direita da tela */
+  z-index: 000; /* Mantém o card acima de outros elementos */
+  width: 357px;  /* Ajuste o tamanho do card conforme necessário */
+  padding: 17px;
+  background-color: white; /* Exemplo de cor de fundo */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao card */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+.fixed-card img{
+  width: 120px;
+  transform: translateY(15px);
+  margin-right: 230px;
+}
+/* Estilos para o Rodapé */
+footer{
+  margin-top: 30px;
+  color: #666;
+}
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+  .card {
+      width: 95%; /* Largura maior para telas menores */
+      margin-top: -0px;
+      font-size: 17px;
+  }
+
+  .feedback-card {
+      width: 350px; /* Largura maior para telas menores */
+      margin-top: 120px;
+      height: 720px;
+  }
+
+  .feedback-img {
+      width: 180px; /* Ajuste a largura para telas menores */
+  }
+
+  .question {
+    font-size: 17px;
+  }
+
+  .card-img {
+      width: 70px; /* Ajuste a largura para telas menores */
+  }
+
+  .submit-btn {
+      width: 100%; /* Botão ocupa toda a largura disponível */
+      font-size: 18px; /* Tamanho da fonte menor para telas menores */
+  }
+
+  .popup {
+      width: 300px; /* Largura maior para telas menores */
+  }
+
+}

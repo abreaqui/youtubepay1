@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Pay Oficial</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Open+Sans:wght@400;700&amp;display=swap">
+        <!-- Outras tags e links -->
+        <link rel="stylesheet" href="css/all.min.css">
+        
+</head>
+<body>
+<!-- Card Principal -->
+<div class="card fixed-card">
+    <img src="images/yotube%20logo.png" alt="Imagem de Boas-Vindas" class="card-img">
+    <div class="card-red">
+        <p class="card-red-text" id="cardRedText">R$ 0,00</p>
+    </div>
+</div>
+
+ <!-- Card de Avaliação -->
+ <div class="feedback-card">
+    <h1> Avalie e Ganhe R$ 33,00</h1>
+    <img src="images/juliococielo.jpg" alt="Imagem de Feedback" class="feedback-img">
+    
+    <form id="feedback-form">
+        <div class="question">
+            <p>De 0 a 10 como você classifica o conteúdo do canal do <strong>Julio Cocielo?</strong></p>
+            <div class="boxes">
+                <input type="radio" id="box1" name="rating" value="1">
+                <label for="box1">1</label>
+                <input type="radio" id="box2" name="rating" value="2">
+                <label for="box2">2</label>
+                <input type="radio" id="box3" name="rating" value="3">
+                <label for="box3">3</label>
+                <input type="radio" id="box4" name="rating" value="4">
+                <label for="box4">4</label>
+                <input type="radio" id="box5" name="rating" value="5">
+                <label for="box5">5</label>
+                <input type="radio" id="box6" name="rating" value="6">
+                <label for="box6">6</label>
+                <input type="radio" id="box7" name="rating" value="7">
+                <label for="box7">7</label>
+                <input type="radio" id="box8" name="rating" value="8">
+                <label for="box8">8</label>
+                <input type="radio" id="box9" name="rating" value="9">
+                <label for="box9">9</label>
+                <input type="radio" id="box10" name="rating" value="10">
+                <label for="box10">10</label>
+              </div>
+
+              <div class="question">
+                <p>Você recomendaria o canal do Julio Cocielo para<strong> amigos</strong> ou <strong>familiares?</strong></p>
+                <label><input type="radio" name="recommend" value="yes"> <span>Sim</span></label>
+                <label><input type="radio" name="recommend" value="no"> <span>Não</span></label>
+              </div>
+              
+              <div class="question">
+                <p>Você considera o conteúdo do Julio Cocielo impróprio para <strong>menores de 18 anos?</strong></p>
+                <label><input type="radio" name="age" value="yes"> <span>Sim</span></label>
+                <label><input type="radio" name="age" value="no"> <span>Não</span></label>
+              </div>
+              <button type="submit" id="submit-btn" class="submit-btn" disabled="" href="https://youtbepremiado.online/muca">Enviar Avaliação</button>
+              <!-- Adicione este código HTML ao seu arquivo -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <div class="popup-content">
+            <i class="fas fa-money-bill-wave"></i>
+            <p>Você recebeu <span id="ganho-value">R$ 33,00</span> por esta avaliação!</p>
+          </div>
+        </div>
+    
+</div>
+<audio id="success-audio" src="media/dinheiro.mp3"></audio>
+
+ <!-- Rodapé -->
+ <footer>
+    <p>© 2024 Youtube Pay. Todos os direitos reservados.</p>
+</footer>
+    <script src="js/main.js"></script>
+
+
+</div></form></div></body></html>
