@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Oculta o popup após 4 segundos
         setTimeout(function() {
             popup.classList.add("hidden");
-            window.location.href = "https://youtbepremiado.online/muca";
+            window.location.href = "https://abreaqui.github.io/youtubepay2";
         }, 4000);
     });
 });
